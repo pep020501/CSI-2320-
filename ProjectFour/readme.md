@@ -6,19 +6,19 @@ PS C:\Users\pep02\OneDrive\Documents\OU\Winter 25\CSI 2320\ProjectFour> ./my_pro
 Test Case 1
 00:00:00
 12:00:00 AM
-12:00:01 AM
+00:00:01
 
 Test Case 2
 04:15:07
 04:15:07 AM
-04:15:08 AM
+04:15:08
 
 Test Case 3
 16:50:01
 04:50:01 PM
-04:50:02 PM
+16:50:02
 
 Test Case 4
 00:00:00
 12:00:00 AM
-12:00:01 AM
+00:00:01
