@@ -14,6 +14,7 @@ int main (){
     defTime.toggleFormat();
     defTime.show();
     defTime.tick();
+    defTime.toggleFormat();
     defTime.show();
   
     cout << "\n";
@@ -23,6 +24,7 @@ int main (){
     time1.toggleFormat(); 
     time1.show();
     time1.tick();
+    time1.toggleFormat();
     time1.show(); 
 
     cout << "\n";
@@ -32,6 +34,7 @@ int main (){
     time2.toggleFormat();
     time2.show(); 
     time2.tick(); 
+    time2.toggleFormat();
     time2.show();
 
     cout << "\n";
@@ -41,8 +44,8 @@ int main (){
     time3.toggleFormat();
     time3.show(); 
     time3.tick(); 
+    time3.toggleFormat();
     time3.show();
 
-   
     return 0;
 }
