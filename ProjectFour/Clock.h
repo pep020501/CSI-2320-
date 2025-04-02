@@ -8,6 +8,7 @@ int hours;
 int minutes; 
 int seconds; 
 bool twelveFormat; 
+bool twentyFourFormat;
 
 public: 
 Clock();
