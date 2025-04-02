@@ -9,6 +9,7 @@ using namespace std;
   hours = 0;
   minutes = 0;
   seconds = 0; 
+  twentyFourFormat = true;
   twelveFormat = false;
 }
 
@@ -17,17 +18,21 @@ Clock::Clock(int H, int M, int S){
         hours = 0;
         minutes = 0; 
         seconds = 0;
+        twentyFourFormat = true;
         twelveFormat = false;
+
     }  
     else {
     hours = H;
     minutes = M; 
     seconds = S;
+    twentyFourFormat = true;
     twelveFormat = false;
     }
 }
 void Clock::toggleFormat(){
-     twelveFormat = true;
+     twelveFormat = !twelveFormat;
+     twentyFourFormat = !twentyFourFormat; 
 }
 
 void Clock::show() {
@@ -51,7 +56,7 @@ void Clock::show() {
              << setw(2) << setfill('0') << minutes << ":"
              << setw(2) << setfill('0') << seconds << " "
              << period << endl;
-    } else {
+    } if(twentyFourFormat) {
         
         cout << setw(2) << setfill('0') << hours << ":"
              << setw(2) << setfill('0') << minutes << ":"
